@@ -1,0 +1,2 @@
+# SumUpAutomation
+Sumup Automation challenge.
