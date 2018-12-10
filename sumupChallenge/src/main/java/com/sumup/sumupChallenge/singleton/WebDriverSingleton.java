@@ -11,7 +11,7 @@ public class WebDriverSingleton {
 
 	private WebDriverSingleton() {
 
-		System.setProperty("webdriver.chrome.driver", "");
+		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
