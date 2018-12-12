@@ -26,6 +26,7 @@ public class WebDriverSingleton {
 	}
 
 	public WebDriver driver() {
+		
 		return driver;
 	}
 

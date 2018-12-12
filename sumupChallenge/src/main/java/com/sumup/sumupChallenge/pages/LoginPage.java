@@ -12,22 +12,31 @@ public class LoginPage extends SeleniumUtils{
 	private WebDriver driver;
 	
 	@FindBy(id = "username")
-	private WebElement fldEmail;
+	public WebElement fldEmail;
 	
 	@FindBy(id="password")
-	private WebElement fldPass;
+	public WebElement fldPass;
 	
 	//TODO refactoring
 	@FindBy(xpath="//*[@id=\"root\"]/ui-view/login/div/section/div[2]/form/ul/li[4]/button")
-	private WebElement btnLogin;
+	public WebElement btnLogin;
 	
 	public LoginPage(WebDriver driver) {
-		driver = this.driver;
-		PageFactory.initElements(driver, this.getClass());
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
 		
 	}
 	
 	public void DoLogin(String userName, String pass) {
+		waitElement(driver, fldEmail);
+		waitElement(driver, fldPass);
+		waitElement(driver, btnLogin);
+		
+		fldEmail.sendKeys(userName);
+		fldPass.sendKeys(pass);
+		btnLogin.click();
+		
+		
 		
 		
 	}

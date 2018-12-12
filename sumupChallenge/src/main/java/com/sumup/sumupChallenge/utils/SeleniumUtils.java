@@ -62,22 +62,22 @@ public class SeleniumUtils {
 		return element;
 	}
 
-	public static WebElement waitElementVisible(WebDriver driver, final By place) {
+	public static WebElement waitElementVisible(WebDriver driver, final WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		WebElement element = wait.until(visibilityOfElementLocated(place));
-		return element;
+		WebElement elementWait = wait.until(visibilityOfElementLocated(element));
+		return elementWait;
 	}
 
 	public static WebElement waitElementNotVisible(WebDriver driver,
-			final By place) {
+			final WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		WebElement element = wait.until(unvisibilityOfElementLocated(place));
-		return element;
+		WebElement elementWait = wait.until(unvisibilityOfElementLocated(element));
+		return elementWait;
 	}
 
 	public static String getValueFromSelectField(WebDriver driver,
-			WebElement locator) {
-		Select selectBox = new Select(locator);
+			WebElement 	element) {
+		Select selectBox = new Select(element);
 		String select = selectBox.getFirstSelectedOption().getText();
 
 		return select;
@@ -101,10 +101,10 @@ public class SeleniumUtils {
 	}
 
 	private static ExpectedCondition<WebElement> visibilityOfElementLocated(
-			final By locator) {
+			final WebElement locator) {
 		return new ExpectedCondition<WebElement>() {
 			public WebElement apply(WebDriver driver) {
-				WebElement toReturn = driver.findElement(locator);
+				WebElement toReturn = locator;
 				if (toReturn.isDisplayed()) {
 					return toReturn;
 				}
@@ -114,10 +114,10 @@ public class SeleniumUtils {
 	}
 
 	private static ExpectedCondition<WebElement> unvisibilityOfElementLocated(
-			final By locator) {
+			final WebElement locator) {
 		return new ExpectedCondition<WebElement>() {
 			public WebElement apply(WebDriver driver) {
-				WebElement toReturn = driver.findElement(locator);
+				WebElement toReturn = locator;
 				if (!toReturn.isDisplayed()) {
 					return toReturn;
 				}

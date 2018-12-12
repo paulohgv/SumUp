@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sumup.sumupChallenge.utils.SeleniumUtils;
 
+@Deprecated
 public class HomePage extends SeleniumUtils{
 
 	//TODO create Get and Set Methods
@@ -28,7 +29,6 @@ public class HomePage extends SeleniumUtils{
 		loginLink.click();
 		
 	}
-	
 	
 	
 }
