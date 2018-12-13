@@ -8,10 +8,12 @@
 	<packaging>jar</packaging>
 
 	<name>sumupChallenge</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/paulohgv/SumUpAutomation</url>
+	<description>Application for running automation test for SumUp</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<language.site>en-USA</language.site>
 	</properties>
 
 	<dependencies>
@@ -24,8 +26,8 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.8</version>
-			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
@@ -38,7 +40,6 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

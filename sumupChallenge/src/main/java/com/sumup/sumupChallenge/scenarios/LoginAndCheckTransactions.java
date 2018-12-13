@@ -1,6 +1,7 @@
 package com.sumup.sumupChallenge.scenarios;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -34,17 +35,21 @@ public class LoginAndCheckTransactions {
 		login = new LoginPage(driver);
 		dash = new DashBoardPage(driver);
 		transactions = new TransactionsPage(driver);
-		
 		driver.get(URL);
-		driver.manage().window().maximize();
-		
-		
 	}
 	
 	
 	@Test(description="Access Login page and access transaction page")
 	//@Parameters({"email", "pass", "userName", "msgResultFilter", "msgAdvice"})
-	public void LoginAndCheckTransactios(String email, String pass, String userName, String msgResultFilter, String msgAdvice) {
+	public void LoginAndCheckTransactios(/*@Optional String email, @Optional String pass, @Optional String userName,
+			@Optional String msgResultFilter, @Optional String msgAdvice*/) {
+	
+		String email = "paulohgv@gmail.com";
+		String pass = "phgv191188";
+		String userName = "Paulo Vicente";
+		String msgResultFilter = "We couldn’t find anything that matches your search.";
+		String msgAdvice = "Please try another search";
+		
 
 		
 		
@@ -52,12 +57,15 @@ public class LoginAndCheckTransactions {
 		dash.verifyUserNameLoggedIn(userName);
 		dash.accessTransactions();
 		transactions.validateTransactions(msgResultFilter, msgAdvice);
-		
-		
+			
 	}
 	
+	@AfterTest
+	public void tearDown(){
+		driver.close();
+	}
 	
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		
 		String email = "paulohgv@gmail.com";
 		String pass = "phgv191188";
@@ -70,6 +78,6 @@ public class LoginAndCheckTransactions {
 		abc.LoginAndCheckTransactios(email, pass, userName, msgResultFilter, msgAdvice);
 		
 
-	}
+	}*/
 	
 }
