@@ -1,6 +1,6 @@
 # Sumup Automation Challenge
 
-Welcome to the SumUp Automation Challenge. Bellow there is some important instructions to run this project. 
+Welcome to SumUp Automation Challenge. Bellow there is a few important instructions to run this project. 
 
 First of all, you will need configure this requirements in your environment
 * Java 8 (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
