@@ -33,3 +33,4 @@ Example how to run the project using the properties above:
 
 mvn clean install -Dbrowser=chrome -Dlang="us" -Dhost='https://tst.sumup.com/'
 
+After the tests were ran, you can see the results in: **./sumupChallenge/target/surefire-reports/html/index.html**
