@@ -3,3 +3,41 @@ sumupChallenge/.settings/org.eclipse.jdt.core.prefs
 sumupChallenge/.classpath
 *.png
 sumupChallenge/.classpath
+sumupChallenge/test-output/collapseall.gif
+sumupChallenge/test-output/Default suite/Default test.html
+sumupChallenge/test-output/Default suite/Default test.xml
+sumupChallenge/test-output/Default suite/testng-failed.xml
+sumupChallenge/test-output/emailable-report.html
+sumupChallenge/test-output/index.html
+sumupChallenge/test-output/jquery-1.7.1.min.js
+sumupChallenge/test-output/junitreports/TEST-com.sumup.sumupChallenge.scenarios.LoginAndCheckTransactions.xml
+sumupChallenge/test-output/old/Default suite/classes.html
+sumupChallenge/test-output/old/Default suite/Default test.properties
+sumupChallenge/test-output/old/Default suite/groups.html
+sumupChallenge/test-output/old/Default suite/index.html
+sumupChallenge/test-output/old/Default suite/main.html
+sumupChallenge/test-output/old/Default suite/methods-alphabetical.html
+sumupChallenge/test-output/old/Default suite/methods-not-run.html
+sumupChallenge/test-output/old/Default suite/methods.html
+sumupChallenge/test-output/old/Default suite/reporter-output.html
+sumupChallenge/test-output/old/Default suite/testng.xml.html
+sumupChallenge/test-output/old/Default suite/toc.html
+sumupChallenge/test-output/old/index.html
+sumupChallenge/test-output/old/SumUp Suit Challange/classes.html
+sumupChallenge/test-output/old/SumUp Suit Challange/groups.html
+sumupChallenge/test-output/old/SumUp Suit Challange/index.html
+sumupChallenge/test-output/old/SumUp Suit Challange/Loggin on my account and verify my transactions.properties
+sumupChallenge/test-output/old/SumUp Suit Challange/main.html
+sumupChallenge/test-output/old/SumUp Suit Challange/methods-alphabetical.html
+sumupChallenge/test-output/old/SumUp Suit Challange/methods-not-run.html
+sumupChallenge/test-output/old/SumUp Suit Challange/methods.html
+sumupChallenge/test-output/old/SumUp Suit Challange/reporter-output.html
+sumupChallenge/test-output/old/SumUp Suit Challange/testng.xml.html
+sumupChallenge/test-output/old/SumUp Suit Challange/toc.html
+sumupChallenge/test-output/SumUp Suit Challange/Loggin on my account and verify my transactions.html
+sumupChallenge/test-output/SumUp Suit Challange/Loggin on my account and verify my transactions.xml
+sumupChallenge/test-output/testng-failed.xml
+sumupChallenge/test-output/testng-reports.css
+sumupChallenge/test-output/testng-reports.js
+sumupChallenge/test-output/testng-results.xml
+sumupChallenge/test-output/testng.css

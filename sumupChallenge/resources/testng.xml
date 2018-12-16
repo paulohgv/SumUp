@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SumUp Suit Challange">
-  <test verbose="2" name="Loggin on my account and verify my transactions">
-    <classes> <!-- Implement more scenarios -->
-      <class name="com.sumup.sumupChallenge.scenarios.LoginAndCheckTransactions">
-      	<parameter name="" value=""></parameter>
-      	<parameter name="" value=""></parameter>
-      	<parameter name="" value=""></parameter>
-      	<parameter name="" value=""></parameter>
-      	<parameter name="" value=""></parameter>
+<suite name="SumUp Suit Challange" preserve-order="true" >
+  
+  <test verbose="2" name="Try to login with wrong credentials">
+    <classes> 
+      <class name="com.sumup.sumupChallenge.scenarios.LoginWithWrongUserPass">
+      	<parameter name="email" value="paulohgv@gmail.com"></parameter>
+      	<parameter name="pass" value="errorLogin"></parameter>
+      	<parameter name="message" value="This combination of email address and password is incorrect."></parameter>
+		<methods>
+			<include name="LoginWithWrongUserAndPass"></include>
+		</methods>
       </class>
     </classes>
   </test> 
+
+  
+  <test verbose="2" name="Login in my account and verify my transactions">
+    <classes>    
+      <class name="com.sumup.sumupChallenge.scenarios.LoginAndCheckTransactions">
+      	<parameter name="email" value="paulohgv@gmail.com"></parameter>
+      	<parameter name="pass" value="phgv191188"></parameter>
+      	<parameter name="userName" value="Paulo Vicente"></parameter>
+      	<parameter name="msgResultFilter" value="We couldn’t find anything that matches your search."></parameter>
+      	<parameter name="msgAdvice" value="Please try another search"></parameter>
+      	<methods>
+      		<include name="LoginAndCheckTransaction"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
 
 </suite> 
