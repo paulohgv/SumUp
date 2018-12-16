@@ -19,7 +19,7 @@ After git was installed:
 
   * Clone this project in your computer.
   * after the project has been cloned, access the directory *./SumUpAutomation/sumupChallenge* using your terminal. 
-  * than, execute this command "mvn clean install". Now this project will be building and executed.
+  * than, execute this command "mvn clean install". Now the project will be building and executed.
   
 ##
 
