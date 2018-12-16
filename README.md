@@ -18,7 +18,7 @@ Pre-step:
 After git was installed:
 
   * Clone this project in your computer.
-  * after the project has cloned, accesse directory *sumupChallenge* using your terminal. 
+  * after the project has been cloned, access the directory *sumupChallenge* using your terminal. 
   * than, execute this command "mvn clean install". Now this project will be building and executed.
   
 ##
