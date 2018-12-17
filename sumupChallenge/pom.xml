@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>sumupChallenge</name>
-	<url>https://github.com/paulohgv/SumUpAutomation</url>
+	<url>https://github.com/paulohgv/SumUp</url>
 	<description>Application for running automation test for SumUp</description>
 
 	<properties>
