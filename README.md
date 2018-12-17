@@ -29,6 +29,7 @@ It is possible to execute the mvn command with additional parameters, like:
   * **browser** = It's possible to choose between two options: chrome or firefox. **Chrome** is defined by default.
   * **lang** = It's possible to choose which language the browser will be run. If you don't define this propertie, the browser will run using **English** by default.
 
+Also is possible to change the parameters used on the test. If you want to change the test parameters, you should have edit the file ./resources/testng.xml and change the values of <parameter> tags. 
 
 How to run the project using the properties above:
 
