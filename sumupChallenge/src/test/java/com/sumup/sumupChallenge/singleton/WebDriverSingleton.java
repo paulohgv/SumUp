@@ -22,10 +22,8 @@ public class WebDriverSingleton {
 		case "firefox":
 			firefoxDriver();
 			break;
-		case "chrome":
+		default: case "chorme":
 			chromeDriver();
-		default:
-			System.out.println("invalid Param");
 			break;
 		}
 	}
